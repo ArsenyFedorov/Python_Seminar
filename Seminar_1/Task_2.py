@@ -1,0 +1,5 @@
+oneclass = int(input("Количество учащихся в 1 класее:"))
+twoclass = int(input("Количество учащихся в 2 класее:"))
+threclass = int(input("Количество учащихся в 3 класее:"))
+desk = (oneclass + twoclass + threclass)//2 + ((oneclass + twoclass + threclass)%2 > 0)
+print (f"Минимальное количество парт:{desk}")

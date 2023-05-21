@@ -3,7 +3,7 @@
 longch =int(input("Ввидите длинну шоколадки:"))
 widthch =int(input("Ввидите ширину шоколадки:"))
 piecesch =int(input("Cколько вам надо кусочков:"))
-if(piecesch < longch*widthch and piecesch//longch or piecesch//widthch):
+if(piecesch < longch*widthch and (piecesch//longch or piecesch//widthch)):
     print("Можно отломи")
 else:
     print("Нельзя ")

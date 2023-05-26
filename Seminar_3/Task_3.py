@@ -9,5 +9,5 @@ my_list = [{"V": "S001"},
 print(my_list)
 my_dict = list()
 for i in range(len(my_list)):
-    my_dict +=(my_list[i].values())
+    my_dict.append(my_list[i].values())
 print(set(my_dict))

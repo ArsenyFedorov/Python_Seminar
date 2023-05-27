@@ -14,14 +14,14 @@ my_list.sort()
 print(my_list)
 if num <= my_list[0]:
     print(f"Число {num} ближе всего к {my_list[0]}")
-elif num >= my_list[lens - 1]:
+elif num >= my_list[(lens - 1)]:
     print(f"Число {num} ближе всего к {my_list[lens - 1]}")
 else:
     for i in range(len(my_list)):
         if my_list[i] > num:
             print(f"Число {num} ближе всего к {my_list[i]}")
             break
-        elif num < my_list[i + 1 ]:
+        elif num < my_list[i + 1]:
             if num - my_list[i] < my_list[i + 1] - num:
                 print(f"Число {num} ближе всего к {my_list[i]}")
                 break

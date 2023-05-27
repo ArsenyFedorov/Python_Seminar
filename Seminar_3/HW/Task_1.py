@@ -9,7 +9,7 @@ count = 0
 for i in range(lens):
     my_list.append(randint(0, 10))
 print(my_list)
-for i in range(len(my_list)-1):
+for i in range(len(my_list)):
     if my_list[i] == num:
         count += 1
 print(f"Число {num} встречается {count} раз")

@@ -17,12 +17,12 @@ list_letters = {1: "AEIOULNSTRАВЕИНОРСТ",
                 10: "QZФЩЪ"}
 
 word = input("Введите слово: ").upper()
-summ = 0
+sum_word = 0
 for i in word:
-     for k, v in list_letters.items():
-         if i in v:
-             summ += k
-print(f"Стоимость слова: {summ}")
+    for k, v in list_letters.items():
+        if i in v:
+            sum_word += k
+print(f"Стоимость слова: {sum_word}")
 
 
 

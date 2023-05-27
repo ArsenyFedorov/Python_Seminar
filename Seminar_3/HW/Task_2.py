@@ -6,7 +6,7 @@ my_list = list()
 lens = int(input("Ввидите длинну списка:"))
 num = int(input("Ввидите искомое число: "))
 for i in range(lens):
-    my_list.append(randint(0, 100))
+    my_list.append(randint(-10, 10))
 print(my_list)
 
 my_list = list(set(my_list))
@@ -14,8 +14,8 @@ my_list.sort()
 print(my_list)
 if num <= my_list[0]:
     print(f"Число {num} ближе всего к {my_list[0]}")
-elif num >= my_list[(lens - 1)]:
-    print(f"Число {num} ближе всего к {my_list[lens - 1]}")
+elif num >= my_list[-1]:
+    print(f"Число {num} ближе всего к {my_list[-1]}")
 else:
     for i in range(len(my_list)):
         if my_list[i] > num:

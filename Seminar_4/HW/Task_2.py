@@ -15,9 +15,11 @@ my_dictionary = dict()
 for k in range(bush):
     my_dictionary[k] = randint(0, 50)
 print(my_dictionary)
+
 berry_max = my_dictionary[bush - 2] + my_dictionary[bush - 1] + my_dictionary[0]
 bush -= 2
 num_bush = 0
+
 for i in range(1, bush - 1):
     if berry_max < my_dictionary[i - 1] + my_dictionary[i] + my_dictionary[i+1]:
         berry_max = my_dictionary[i - 1] + my_dictionary[i] + my_dictionary[i+1]

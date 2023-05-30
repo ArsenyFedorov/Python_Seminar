@@ -22,7 +22,7 @@ num_bush = 0
 for i in range(1, bush):
     if i == bush - 1:
         if berry_max < my_dictionary[i - 1] + my_dictionary[i] + my_dictionary[0]:
-            berry_max = my_dictionary[i - 1] + my_dictionary[i] + my_dictionary[i+1]
+            berry_max = my_dictionary[i - 1] + my_dictionary[i] + my_dictionary[0]
             num_bush = i
     else:
         if berry_max < my_dictionary[i - 1] + my_dictionary[i] + my_dictionary[i + 1]:

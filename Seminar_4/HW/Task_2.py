@@ -10,17 +10,17 @@
 '''
 from random import randint
 bush = int(input("Ввидите количество  кустов: "))
-my_dictionary = dict()
+my_dictionary = {0: 6, 1: 31, 2: 41, 3: 39, 4: 33}
 
 for k in range(bush):
     my_dictionary[k] = randint(0, 50)
 print(my_dictionary)
 
 berry_max = my_dictionary[bush - 2] + my_dictionary[bush - 1] + my_dictionary[0]
-bush -= 2
+bush -= 1
 num_bush = 0
 
-for i in range(1, bush - 1):
+for i in range(1, bush):
     if berry_max < my_dictionary[i - 1] + my_dictionary[i] + my_dictionary[i+1]:
         berry_max = my_dictionary[i - 1] + my_dictionary[i] + my_dictionary[i+1]
         num_bush = i
